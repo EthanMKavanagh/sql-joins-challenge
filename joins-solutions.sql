@@ -48,7 +48,13 @@ WHERE "product_id" = 6;
 
 --STRETCH GOALS
 -- 9. How much was the total cost for each order?
-
+-- SOMETHING CLOSER TO THIS, STILL NOT CORRECT THOUGH
+-- SELECT "orders"."id", COUNT("line_items"."quantity"),SUM("products"."unit_price") FROM "orders"
+-- JOIN "line_items"
+-- ON "orders"."id" = "line_items"."order_id"
+-- JOIN "products"
+-- ON "line_items"."product_id" = "products"."unit_price"
+-- GROUP BY "orders"."id";
 
 -- 10. How much has each customer spent in total?
 
